@@ -1,0 +1,12 @@
+[package]
+name = "hybrid-comp"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+smithay = { version = "0.7", features = ["backend_winit", "desktop", "wayland_frontend"] }
+calloop = "0.13"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+wayland-server = "0.31"
+xkbcommon = "0.8"
